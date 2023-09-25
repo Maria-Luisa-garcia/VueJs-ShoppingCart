@@ -1,12 +1,12 @@
 <center>
-<img
-src=""
-alt="Itgam Banner" />
+  <img src="" alt="Itgam Banner" />
 </center>
 
-# shopping Cart App 🛒
+# Shopping Cart 🛒 Project
 
-Proyecto para el curso de Desarrollo de Aplicaciones para dispositivos moviles 2023-B usando Vue.js
+Proyecto didáctico para el curso de VueJS usando Composition API.
+Impartido en el [Tecnm/ITGAM](https://www.gamadero.tecnm.mx/).
 
-# Autor
+## Autor
+
 Garcia Tellez Maria Luisa
