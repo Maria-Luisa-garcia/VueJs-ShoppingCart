@@ -6,8 +6,8 @@ const editing = ref(false);
 const doEdit = (edit) => {
   editing.value = edit;
   // Limpiando la entrada de texto
-  // en caso de que se oculte o muestre
-  // el formulario
+  // en caso de que se oculte o muestre el formulario
+
   newItem.value = "";
   newItemHighPriority.value = false;
 };
@@ -24,7 +24,6 @@ const saveItem = () => {
   items.value.push({
     id: items.value.length + 1,
     label: newItem.value,
-    highPriority: newItemHighPriority.value
   });
   // Reiniciendo la entrada de texto
   newItem.value = "";
@@ -44,8 +43,8 @@ const reversedItems = computed(() => [...items.value].reverse());
 <template>
   <div class="header">
     <h1> <i class="material-icons shopping-cart-icon">local_mall</i> {{ header }}</h1>
-    <button v-if="editing" @click="doEdit(false)" class="btn">Cancel</button>
-    <button v-else @click="doEdit(true)" class="btn btn-primary">Add Item</button>
+    <button v-if="!editing" @click="doEdit(true)" class="btn btn-primary">Agregar Ariticulo</button>
+    <button v-else @click="doEdit(false)" class="btn">Cancelar</button>
   </div>
   <!-- Agrupando Entradas de usuario -->
   <form class="add-item form" v-if="editing" v-on:submit.prevent="saveItem">

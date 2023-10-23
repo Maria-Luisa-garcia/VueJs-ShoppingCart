@@ -59,15 +59,14 @@ body {
     cursor: pointer;
     transition: all 0.1s ease-in;
   }
-  
   li:hover {
     color: #F45050;
   }
-  
+
   li input {
     margin: 0 0.5rem 0;
   }
-  
+
   #shopping-list > input,
   #shopping-list > select {
     width: 100%;
